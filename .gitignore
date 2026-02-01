@@ -1,0 +1,15 @@
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+data
+.env
+my_session.session
+*.session
+*.session-journal
+*.db
+*.sqlite
+*.sqlite3
+*.log
+node_modules

@@ -1,0 +1,13 @@
+services:
+  bot:
+    build: .
+    container_name: newsletter-bot
+    restart: unless-stopped
+    environment:
+      BOT_TOKEN: "${BOT_TOKEN}"
+      TELETHON_API_ID: "${TELETHON_API_ID}"
+      TELETHON_API_HASH: "${TELETHON_API_HASH}"
+      TELETHON_SESSION: "${TELETHON_SESSION:-my_session}"
+      ALLOWED_USER_IDS: "${ALLOWED_USER_IDS}"
+    volumes:
+      - ./data:/app/data
