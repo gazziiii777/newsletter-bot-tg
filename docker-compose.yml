@@ -10,4 +10,5 @@ services:
       TELETHON_SESSION: "${TELETHON_SESSION:-my_session}"
       ALLOWED_USER_IDS: "${ALLOWED_USER_IDS}"
     volumes:
+      - ./my_session.session:/app/my_session.session
       - ./data:/app/data
